@@ -12,6 +12,7 @@ export async function turnoRoutes(app: FastifyInstance) {
         const { codigo } = bodySchema.parse(request.body);
         const codigoNormalizado = codigo.toLowerCase();
 
+
         let usuario = await prisma.usuario.findUnique({
             where: { codigo: codigoNormalizado },
         });
