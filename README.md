@@ -1,8 +1,8 @@
-# 📦 Backend - Sistema de Controle de Ponto
+Backend - Sistema de Controle de Ponto
 
 Este é o backend do sistema de controle de ponto desenvolvido para o processo seletivo da Ilumeo. A API permite login com código de usuário, início e término de turnos, e consulta dos registros.
 
-## 🚀 Tecnologias e Ferramentas
+Tecnologias e Ferramentas
 
 - TypeScript
 - Fastify
@@ -12,25 +12,11 @@ Este é o backend do sistema de controle de ponto desenvolvido para o processo s
 - Vitest + Supertest (Testes automatizados)
 - ESLint + Prettier
 
-## 📁 Estrutura do Projeto
-
-📦 ponto-backend
-├── src/
-│ ├── lib/
-│ ├── routes/
-│ └── server.ts
-├── prisma/
-│ └── schema.prisma
-├── tests/
-│ └── turnos.test.ts
-├── Dockerfile
-└── docker-compose.yml
-
 bash
 Copiar
 Editar
 
-## 🔧 Como rodar localmente
+Como rodar localmente
 
 ```bash
 # Clone o repositório
