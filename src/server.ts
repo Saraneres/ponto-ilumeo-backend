@@ -15,14 +15,12 @@ async function start() {
 
     app.register(turnoRoutes);
 
-    app.listen({ port: 3333 }, (err, address) => {
-        if (err) {
-            console.error(err);
-            process.exit(1);
-        }
-        console.log(`Servidor rodando em ${address}`);
-    });
+    app.listen({
+        port: Number(process.env.PORT) || 3333,
+        host: '0.0.0.0', // ESSENCIAL para Railway
+    }).then(() => {
+        console.log('🚀 HTTP Server Running!');
+    })
 }
-
 start();
 
